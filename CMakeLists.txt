@@ -6,7 +6,7 @@ cmake_minimum_required(VERSION 3.0)
 
 file(READ ${CMAKE_CURRENT_SOURCE_DIR}/scripts/version.txt ver)
 project(doctest VERSION ${ver})
-
+message(STATUS "CMAKE_CXX_FLAGS=${CMAKE_CXX_FLAGS}")
 option(DOCTEST_WITH_TESTS "Build tests/examples" ON)
 
 add_library(${PROJECT_NAME} INTERFACE)
